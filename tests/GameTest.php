@@ -12,7 +12,7 @@ class GameTest extends TestCase
     {
         parent::setUp();
 
-        $this->game = new \App\HeroGame();
+        $this->game = new \App\HeroGame(new App\Logger\GameLogger());
     }
 
     /** @test */
